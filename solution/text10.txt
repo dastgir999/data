@@ -1,0 +1,32 @@
+
+100% Solution of CodeIgniter Message: Creation of dynamic property CI_URI::$config is deprecated.
+
+
+To solve the CodeIgniter script running issue, we will have to make some changes in the following files.
+
+/system/core/URI.php
+
+#[\AllowDynamicProperties]
+
+class CI_URI {
+/system/core/Router.php
+
+#[\AllowDynamicProperties]
+
+class CI_Router {
+/system/core/Loader.php
+
+#[\AllowDynamicProperties]
+
+class CI_Loader {
+/system/core/Controller.php
+
+#[\AllowDynamicProperties]
+
+class CI_Controller {   
+/system/database/DB_driver.php
+
+#[\AllowDynamicProperties]
+
+abstract class CI_DB_drive
+
