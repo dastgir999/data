@@ -1,0 +1,1 @@
+100% Solution of CodeIgniter Message: Creation of dynamic property CI_URI::$config is deprecated.
